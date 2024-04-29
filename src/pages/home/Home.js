@@ -15,6 +15,10 @@ import teamData from "../../data/Team";
 
 const introEnabled = false;
 
+function isOnMobile() {
+    return window.innerWidth <= 800;
+}
+
 export default function Home() {
     return (
         <>
@@ -67,7 +71,7 @@ export default function Home() {
 
             <TopMenu />
 
-            <Space lines={160} />
+            <Space lines={isOnMobile() ? 140 : 160} />
             
             <WhoAreWe />
 

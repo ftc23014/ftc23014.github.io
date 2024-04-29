@@ -1,3 +1,4 @@
+import teamData from "../../../data/Team";
 
 
 export default function Outreach() {
@@ -17,7 +18,7 @@ export default function Outreach() {
                     Outreach is also not alone in physical events, as we have also worked on digital outreach projects.
                     These projects have allowed us to reach a wider audience and spread our message to people around the world, for example, through our social media platforms.
                     We are always looking for new ways to reach out to others and share our passion for technology and innovation.
-                    Currently, you can subscribe to us on YouTube or follow us on Instagram to hear more about our team and our projects.
+                    Currently, you can subscribe to us on <a href={teamData.links.youtube}>YouTube</a> or follow us on <a href={teamData.links.instagram}>Instagram</a> to hear more about our team and our projects.
                 </p>
             </div>
         </div>

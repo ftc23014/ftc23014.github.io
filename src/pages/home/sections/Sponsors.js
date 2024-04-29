@@ -15,6 +15,9 @@ export default function Sponsors() {
                 <img src="/images/sponsors/ash_logo.png" onClick={redirect("https://ash.nl")} className="ash-logo" width="435px" height="129px" />
                 <img src="/images/sponsors/touchcast.webp" onClick={redirect("https://touchcast.com/")} className="touchcast-logo" width="690px" height="362px" />
             </div>
+            <div className="sponsors-logos">
+                <img src="/images/sponsors/esa.png" onClick={redirect("https://www.esa.int/")} className="esa-logo" width="1024px" height="373px" />
+            </div>
         </div>
     );
 }
