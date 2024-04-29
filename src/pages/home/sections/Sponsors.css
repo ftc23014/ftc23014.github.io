@@ -1,0 +1,47 @@
+:root {
+    --img-width: 30vw;
+}
+
+
+.sponsors {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sponsors-logos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* center vertically */
+    align-items: center;
+}
+
+.ash-logo {
+    height: calc(129px * (max(var(--img-width), 300px) / 435));
+
+    filter: grayscale(100%);
+}
+
+.touchcast-logo {
+    height: calc(362px * (max(var(--img-width), 300px) / 690));
+    /* color to bg scale */
+    filter: grayscale(100%) invert(1);
+}
+
+.sponsors-logos > img {
+    filter: grayscale(100%);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+    max-width: 300px;
+    width: var(--img-width);
+    height: auto;
+}
+
+.sponsors-logos > img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%) invert(0);
+    cursor: pointer;
+}

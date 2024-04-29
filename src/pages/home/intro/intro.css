@@ -1,0 +1,116 @@
+:root {
+    --n-begin: 10;
+    --center-percent: -46;
+    --n-offset: 0;
+    --move-anim: 2s;
+}
+
+.numbers {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: 150px;
+
+    text-align: center;
+
+    width: 100%;
+    height: calc(60vh);
+    position: absolute;
+    
+    letter-spacing: 5vw;
+
+    overflow-x: visible;
+
+    white-space: nowrap;
+}
+
+.numbers > span {
+    white-space: nowrap;
+}
+
+.numbers-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 10;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s;
+    user-select: none;
+    pointer-events: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+span > span {
+    display: inline-block;
+    animation-duration: var(--move-anim);
+    -webkit-transition-duration: var(--move-anim);
+    -moz-transition-duration: var(--move-anim);
+    animation-timing-function:cubic-bezier(1,.07,.59,.24);
+    transform: translateY(0vh);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.numbers > * {
+    color: #151414;
+    left: 50%;
+    transform: translateX(calc(var(--center-percent) * 1%));
+    position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .numbers {
+        font-size: 100px;
+        height: calc(70vh);
+    }
+}
+
+.numbers > *:nth-child(1) {
+    z-index: 25;
+    top: calc(var(--n-begin) * 1%);
+    transform: translateX(calc(var(--center-percent) * 1% - calc(var(--n-offset) * 2%)));
+}
+
+.numbers > *:nth-child(2) {
+    top: calc(var(--n-begin) * 1% + 25%);
+    z-index: 50;
+    transform: translateX(calc(var(--center-percent) * 1% - calc(var(--n-offset) * 1%)));
+}
+.numbers > *:nth-child(3) {
+    z-index: 100;
+    top: calc(var(--n-begin) * 1% + 50%);
+}
+.numbers > *:nth-child(4) {
+    z-index: 50;
+    top: calc(var(--n-begin) * 1% + 75%);
+    transform: translateX(calc(var(--center-percent) * 1% + calc(var(--n-offset) * 1%)));
+}
+.numbers > *:nth-child(5) {
+    z-index: 25;
+    top: calc(var(--n-begin) * 1% + 100%);
+    transform: translateX(calc(var(--center-percent) * 1% + calc(var(--n-offset) * 2%)));
+}
+
+.main-number {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+.move-up {
+    transform: translateY(-150vh);
+}
+
+.move-down {
+    transform: translateY(150vh);
+}

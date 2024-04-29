@@ -1,0 +1,109 @@
+
+.section {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section-title {
+    font-family: "Rubik Mono One", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-text-center {
+    text-align: center;
+}
+
+.section-stylized-handwriting {
+    font-family: "Reenie Beanie", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.section-stylized-graffiti {
+    font-family: "Lacquer", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.section-stylized-pixelized-fancy {
+    font-family: "Jacquard 24", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.section-flex-oneliner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-lmargin-20px {
+    margin-left: 20px;
+}
+
+.s-rmargin-20px {
+    margin-right: 20px;
+}
+
+.white-link {
+    color: white;
+    display: inline-block;
+    transition-duration: 0.1s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.white-link:hover {
+    color: rgb(196, 147, 147);
+    transform: rotate(-8deg);
+}
+
+.no-bottom-padding {
+    padding-bottom: 0px;
+}
+
+.section-paragraph {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    /*center the paragraph*/
+    display: flex;
+    justify-content: center;
+}
+
+.section-text-block {
+    text-align: justify; /* Justify the text */
+    letter-spacing: calc((100% - 100vw) * 100);
+    width: 50vw;
+    line-height: 1.2;
+}
+
+.h-with-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-with-icons > div > svg {
+    margin-left: 10px;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.h-with-icons > div > svg:hover {
+    transform: scale(1.12);
+    cursor: pointer;
+    color:brown;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
