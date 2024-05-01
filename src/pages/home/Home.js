@@ -13,7 +13,7 @@ import Outreach from "./sections/Outreach";
 import TopMenu from "./sections/Menu";
 import teamData from "../../data/Team";
 
-const introEnabled = false;
+const introEnabled = true;
 
 function isOnMobile() {
     return window.innerWidth <= 800;

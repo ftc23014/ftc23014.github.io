@@ -87,7 +87,7 @@ export default function Intro() {
                 setTimeout(() => {
                     document.querySelector(".hanging-thing").classList.remove("hanging-thing-up");
                     window.scrollTo({
-                        top: 300,
+                        top: 500,
                         left: 0,
                         behavior: "smooth",
                     });

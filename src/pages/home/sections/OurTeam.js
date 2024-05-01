@@ -14,7 +14,7 @@ export default function OurTeam() {
                 <p className="section-text-block">
                     Our team is represented by a diverse group of students from the American School of The Hague.
                     In total, there are {teamData.student_count} students on our team, representing a total of {teamData.countries_representation.length} countries.
-                    By working together and sharing our unique perspectives, we are able to constantly innovate and push the boundaries of our capabilities.
+                    By working together and sharing our unique perspectives, we are able to constantly learn and grow as a team.
                 </p>
             </div>
             <h3 className='section-title'>We are from...</h3>
@@ -43,7 +43,8 @@ export default function OurTeam() {
             </div>
             <div className="section-paragraph">
                 <p className="section-text-block">
-                    Something else about being from different countries and working together (idk)
+                    By being at an international school, we constantly have new and diverse thoughts and ideas that we can bring to the table.
+                    Our many cultures allow us to process and analyze problems, such as the challenge statements in FIRST Tech Challenge, from many perspectives, which is a key part of our success.
                 </p>
             </div>
         </div>
