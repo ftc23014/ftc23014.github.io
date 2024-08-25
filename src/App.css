@@ -1,5 +1,3 @@
-
-
 .scroll-down {
     display: block;
     transform: rotate(-20deg);
@@ -7,21 +5,21 @@
     border: 1px solid white;
     color: white;
     width: 100px;
-
+  
     font-family: "Lacquer", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
+  
     border-radius: 3px;
     margin-top: 40px;
     margin-left: 20px;
-
+  
     background-color: black;
     z-index: 3;
     position: absolute;
-}
-
-.hang-line1 {
+  }
+  
+  .hang-line1 {
     width: 2px;
     height: 120px;
     background-color: white;
@@ -30,9 +28,9 @@
     left: 20px;
     z-index: 2;
     display: block;
-}
-
-.hang-line2 {
+  }
+  
+  .hang-line2 {
     width: 2px;
     height: 100px;
     background-color: white;
@@ -41,15 +39,26 @@
     left: 128px;
     z-index: 2;
     display: block;
-}
-
-.hanging-thing {
+  }
+  
+  .hanging-thing {
     transform: translateY(0px);
     display: block;
     transition-duration: 1s;
     transition-timing-function: ease-out;
-}
-
-.hanging-thing-up {
+  }
+  
+  .hanging-thing-up {
     transform: translateY(-100px);
-}
+  }
+  .top-menu-container.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
